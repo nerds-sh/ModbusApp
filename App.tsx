@@ -16,7 +16,7 @@ const App = () => {
   const handleSubmit = async (values) => {
     try {
       // Replace with your server's endpoint
-      const response = await axios.post('http://192.168.1.1:5000/write', values);
+      const response = await axios.post('http://localhost:5040/write', values);
       console.log('Success!'); // Show success message or handle response
     } catch (error) {
       console.error(error);
